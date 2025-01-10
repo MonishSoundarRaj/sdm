@@ -1,0 +1,63 @@
+.container {
+  padding: var(--mantine-spacing-xl);
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: var(--mantine-spacing-sm);
+}
+
+.subtitle {
+  color: var(--mantine-color-gray-7);
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.paper {
+  padding: var(--mantine-spacing-md);
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--mantine-radius-md);
+}
+
+.trainingProgressPaper {
+  min-height: 300px; /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.startButton {
+  background-color: var(--mantine-color-dark-6);
+  color: white;
+  border-radius: var(--mantine-radius-md);
+  transition: all 0.3s ease;
+}
+
+.startButton:hover {
+  background-color: var(--mantine-color-dark-8) !important;
+}
+
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  padding: var(--mantine-spacing-md) 0;
+}
+
+.emptyState {
+  text-align: center;
+  color: var(--mantine-color-gray-6);
+}
+
+.emptyState svg {
+  margin-bottom: var(--mantine-spacing-md);
+}

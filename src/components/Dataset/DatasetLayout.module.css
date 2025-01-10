@@ -1,0 +1,120 @@
+.container {
+  padding: var(--mantine-spacing-xl);
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: var(--mantine-spacing-md);
+  display: flex;
+  justify-content: space-between;
+}
+
+.uploadButton {
+  background-color: var(--mantine-color-dark-6);
+  color: white;
+}
+
+.contentBox {
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--mantine-radius-md);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.searchInput {
+  margin-bottom: var(--mantine-spacing-lg);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  padding: var(--mantine-spacing-md);
+}
+
+.datasetList {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: var(--mantine-spacing-md);
+  scrollbar-width: thin;
+  scrollbar-color: var(--mantine-color-gray-3) transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.datasetList:hover {
+  scrollbar-color: var(--mantine-color-gray-3) transparent;
+}
+
+.datasetList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.datasetList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.datasetList::-webkit-scrollbar-thumb {
+  background-color: var(--mantine-color-gray-3);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.datasetList:hover::-webkit-scrollbar-thumb {
+  background-color: var(--mantine-color-gray-3);
+}
+
+.datasetList::-webkit-scrollbar-thumb:hover {
+  background-color: var(--mantine-color-gray-7);
+}
+
+.datasetItem {
+  padding: var(--mantine-spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.datasetItem:hover {
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.datasetItemContent {
+  width: 100%;
+}
+
+.datasetInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  gap: var(--mantine-spacing-xs);
+  flex-shrink: 0;
+}
+
+.actionIcon {
+  transition: all 0.6s ease;
+  border-radius: 4px;
+  color: var(--mantine-color-dark-2);
+}
+
+.actionIcon:hover {
+  background-color: var(--mantine-color-dark-0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+.emptyState {
+  text-align: center;
+  color: var(--mantine-color-gray-6);
+}
+
+.emptyState svg {
+  margin-bottom: var(--mantine-spacing-md);
+}

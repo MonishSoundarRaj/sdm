@@ -1,0 +1,106 @@
+.container {
+  padding: var(--mantine-spacing-xl);
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: var(--mantine-spacing-sm);
+}
+
+.subtitle {
+  color: var(--mantine-color-gray-7);
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.paper {
+  padding: var(--mantine-spacing-xl);
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: var(--mantine-radius-md);
+  border: 1px solid var(--mantine-color-gray-2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.recentDataPaper {
+  min-height: 300px; /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--mantine-color-dark-7);
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.generatedItem {
+  padding: var(--mantine-spacing-md);
+  background-color: #ffffff;
+  border: 1px solid var(--mantine-color-gray-2);
+  border-radius: var(--mantine-radius-md);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.generatedItem:last-child {
+  margin-bottom: 0;
+}
+
+.dataItem {
+  width: 100%;
+}
+
+.scoreBadge {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.actionIcon {
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  color: var(--mantine-color-dark-2);
+}
+
+.actionIcon:hover {
+  background-color: var(--mantine-color-dark-0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.startButton {
+  background-color: var(--mantine-color-dark-6);
+  color: white;
+  border-radius: var(--mantine-radius-md);
+  transition: all 0.3s ease;
+}
+
+.startButton:hover {
+  background-color: var(--mantine-color-dark-8) !important;
+}
+
+.viewMoreButton {
+  background-color: var(--mantine-color-blue-6);
+  color: white;
+  border-radius: var(--mantine-radius-md);
+  transition: all 0.3s ease;
+}
+
+.viewMoreButton:hover {
+  background-color: var(--mantine-color-blue-8) !important;
+}
+
+.emptyState {
+  text-align: center;
+  color: var(--mantine-color-gray-6);
+}
+
+.emptyState svg {
+  margin-bottom: var(--mantine-spacing-md);
+}

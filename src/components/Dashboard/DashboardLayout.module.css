@@ -1,0 +1,322 @@
+.container {
+  background-color: #f9f9f9;
+  padding: var(--mantine-spacing-xl);
+  min-height: 100vh;
+}
+
+.chartPaper {
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chartPaper :global(.recharts-wrapper) {
+  font-family: inherit;
+}
+
+.chartPaper :global(.recharts-surface) {
+  overflow: visible;
+}
+
+
+.dataValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.datasetSelect {
+  width: 150px;
+}
+
+.activityPaper,
+.actionsPaper,
+.jobQueuePaper {
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.actionsPaper :global(.mantine-Button-root) {
+  transition: transform 0.2s ease;
+}
+
+.actionsPaper :global(.mantine-Button-root:hover) {
+  transform: translateY(-2px);
+}
+
+.actionsPaper :global(.mantine-Button-root + .mantine-Button-root) {
+  margin-top: 1rem;
+}
+
+.jobQueuePaper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.jobQueueList {
+  flex-grow: 1;
+}
+
+.jobQueueItem {
+  padding: var(--mantine-spacing-xs);
+  border-radius: var(--mantine-radius-sm);
+  background-color: var(--mantine-color-gray-0);
+  transition: background-color 0.2s ease;
+  margin-bottom: var(--mantine-spacing-xs);
+}
+
+.jobQueueItem:last-child {
+  margin-bottom: 0;
+}
+
+.jobQueueItem:hover {
+  background-color: var(--mantine-color-gray-1);
+}
+
+.actionIconRight {
+  margin-left: auto;
+}
+
+.jobTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 40px);
+}
+
+.qastack {
+  margin-top: var(--mantine-spacing-md);
+}
+
+.datasetSelector {
+  position: relative;
+  width: 200px;
+}
+
+.datasetSelectorToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  border: 1px solid var(--mantine-color-gray-3);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.datasetSelectorToggle:hover {
+  border-color: var(--mantine-color-blue-5);
+}
+
+.chevronIcon {
+  transition: transform 0.2s ease;
+}
+
+.chevronIconOpen {
+  transform: rotate(180deg);
+}
+
+.datasetSelectorDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid var(--mantine-color-gray-3);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.datasetSearchInput {
+  padding: var(--mantine-spacing-xs);
+}
+
+.datasetSearchInput input {
+  border-radius: 6px;
+}
+
+.datasetList {
+  padding: var(--mantine-spacing-xs);
+}
+
+.datasetOption {
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  transition: background-color 0.2s ease;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.truncateText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px; 
+}
+
+.datasetRadio {
+  cursor: pointer;
+}
+
+.datasetRadio label {
+  cursor: pointer;
+}
+
+.datasetOption:hover {
+  background-color: var(--mantine-color-gray-1);
+}
+
+.datasetOption input[type="radio"] {
+  margin-right: var(--mantine-spacing-xs);
+  cursor: pointer;
+}
+
+.datasetList::-webkit-scrollbar {
+  width: 2px;
+}
+
+.datasetList::-webkit-scrollbar-track {
+  background: var(--mantine-color-gray-1);
+}
+
+.datasetList::-webkit-scrollbar-thumb {
+  background-color: var(--mantine-color-gray-4);
+  border-radius: 4px;
+}
+
+.datasetList::-webkit-scrollbar-thumb:hover {
+  background-color: var(--mantine-color-gray-5);
+}
+
+.customTooltip {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.customTooltipContent {
+  padding: 5px;
+}
+
+.customTooltip .label {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+
+.customTooltip .intro {
+  font-size: 0.875rem;
+  margin: 2px 0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: white;
+}
+
+
+.fixedHeight {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recentActivitiesHeight,
+.quickActionsHeight {
+  min-height: 200px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.recentActivitiesHeight .activityContent,
+.quickActionsHeight .actionContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  overflow-y: auto; 
+}
+
+.recentActivitiesHeight,
+.quickActionsHeight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.chartContent,
+.jobQueueContent,
+.activityContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartContent > div,
+.jobQueueContent > div,
+.activityContent > div {
+  height: 100%;
+}
+
+.jobQueueList {
+  height: calc(100% - 40px);
+}
+
+.dataCard {
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: var(--mantine-spacing-md);
+  background-color: white;
+  border-radius: var(--mantine-radius-md);
+  height: 150px; /* Set a fixed height */
+}
+
+.dataCard > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.dataCard .dataValue {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: var(--mantine-spacing-xs) 0;
+}
+
+.dataCard .emptyState {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dataCard .emptyState > * {
+  margin: 0; /* Remove vertical margins */
+}
+
+.dataCard .emptyState .icon {
+  margin-bottom: var(--mantine-spacing-xs); /* Add small space below icon */
+}
+
+.dataCard .emptyState .title {
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: 700;
+  margin-bottom: 2px; /* Minimal space between title and description */
+}
+
+.dataCard .emptyState .description {
+  font-size: 0.8rem; /* Adjust as needed */
+  color: var(--mantine-color-gray-6);
+}
